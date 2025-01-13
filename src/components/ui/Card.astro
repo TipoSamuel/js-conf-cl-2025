@@ -5,23 +5,29 @@ interface Props {
   horizontal?: boolean
 }
 
-const { title, body, horizontal } = Astro.props
+const { title, body, horizontal } = Astro.props;
 ---
 
 <div class="info-card" class:list={horizontal ? 'horizontal' : ''}>
-  <h2>{title}</h2>
+  <h3>{title}</h3>
   <p>{body}</p>
 </div>
 <style>
   .info-card {
-    background-color: #0C0A09;
+    background-color: #0c0a09;
     border: 1px solid #292524;
     border-radius: 0.5rem;
     padding: 1.5rem;
     gap: 1rem;
 
+    h3 {
+      margin: 0 0 1rem;
+    }
+
     & p {
-      color: #78716C;
+      color: #78716c;
+      line-height: 1.25;
+      margin: 0;
     }
 
     &.horizontal {
