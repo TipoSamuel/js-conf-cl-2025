@@ -57,7 +57,7 @@ const bento2 = [
     <Image
       alt="JSConf Chile 2024"
       height={446}
-      src="/media/JSConf-Dia-2-Evento-50.webp"
+      src="/media/jsconf-dia-2-evento-50.webp"
       width={609}
     />
   </div>
@@ -68,7 +68,7 @@ const bento2 = [
     <Image
       alt="JSConf Chile 2024 acreditación del evento"
       height={362}
-      src="/media/JSConf-Chile-2023-Dia-2-005.webp"
+      src="/media/jsconf-chile-2023-cia-2-005.webp"
       width={738}
     />
   </div>
@@ -190,8 +190,9 @@ const bento2 = [
 
     .bento-2 {
       & .bento-2-info {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
       }
 
       & .bento-2-image {
